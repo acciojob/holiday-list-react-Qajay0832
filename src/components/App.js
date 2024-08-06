@@ -36,6 +36,9 @@ const App = () => {
   return (
     <div id="main">
                {/* Do not remove the main div */}
+               <ol>
+               {cityList.filter(city=>city.country=='India').map((city,index)=>{return <li key={'location'+(index+1)}>{city.name}</li>})}
+               </ol>
     </div>
   )
 }
